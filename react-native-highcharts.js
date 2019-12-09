@@ -32,13 +32,13 @@ class ChartWeb extends Component {
                     </style>
                     <head>
                         <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-                        ${this.props.stock ? '<script src="https://code.highcharts.com/stock/highstock.js"></script>'
-                                      : '<script src="https://code.highcharts.com/highcharts.js"></script>'}
-                        ${this.props.more ? '<script src="https://code.highcharts.com/highcharts-more.js"></script>'
+                        ${this.props.stock ? '<script src="https://code.highcharts.com/stock/7.2.0/highstock.js"></script>'
+                                      : '<script src="https://code.highcharts.com/7.2.0/highcharts.js"></script>'}
+                        ${this.props.more ? '<script src="https://code.highcharts.com/7.2.0/highcharts-more.js"></script>'
                                       : ''}
-                        ${this.props.guage ? '<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>'
+                        ${this.props.guage ? '<script src="https://code.highcharts.com/modules/7.2.0/solid-gauge.js"></script>'
                                       : ''}
-                        <script src="https://code.highcharts.com/modules/exporting.js"></script>
+                        <script src="https://code.highcharts.com/modules/7.2.0/exporting.js"></script>
                         <script>
                         $(function () {
                             Highcharts.setOptions(${JSON.stringify(this.props.options)});
